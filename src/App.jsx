@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import routes from './routes';
+import routes from './Routes';
 import ScrollController from './components/common/ScrollController';
 
 function App() {
