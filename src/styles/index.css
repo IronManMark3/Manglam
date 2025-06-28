@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional CSS variables */
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+/* Hide scrollbar for entire site */
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* ✅ FIXED scroll-lock class */
+.scroll-lock {
+  overflow-y: hidden !important;
+  overscroll-behavior: none;
+}
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInDown {
+  animation: slideInDown 1s ease-out forwards;
+}
+@font-face {
+  font-family: 'Mackay italic';
+  src: url('/assets/Mackay-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'blkchcry';
+  src: url('/assets/BLKCHCRY.TTF') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Mackay Medium';
+  src: url('/assets/Mackay-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Mackay Regular';
+  src: url('/assets/Mackay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Mackay bolditalic';
+  src: url('/assets/Mackay-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+html, body {
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* IE/Edge */
+  overflow-y: scroll;            /* Still allows scroll */
+}
+
+::-webkit-scrollbar {
+  display: none;                 /* Chrome, Safari */
+}
+
